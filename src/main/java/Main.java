@@ -22,17 +22,21 @@ public class Main {
                 int a = Integer.parseInt(stringsArr[0]);
                 int b = Integer.parseInt(stringsArr[1]);
                 int c = Integer.parseInt(stringsArr[2]);
-                    intsArr = new int [] {a,b,c};
+                    intsArr = new int []{a,b,c};
                     Arrays.sort(intsArr);
-                    System.out.print(Arrays.toString(intsArr) + " | ");
-                    int surfaceArea = 3 * a * b + 2 * b * c + 2 * a * c;
-                    System.out.println(surfaceArea);
-                    sumOfSurfaceArea +=surfaceArea;
+
+                    a = intsArr[0];
+                    b = intsArr[1];
+                    c = intsArr[2];
+
+                    int surfaceArea = 3 * a* b + 2 * b * c + 2 * a * c;
+                    sumOfSurfaceArea+=surfaceArea;
 
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         System.out.println(sumOfSurfaceArea);
         try {
 
